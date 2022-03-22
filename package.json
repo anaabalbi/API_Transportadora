@@ -1,0 +1,23 @@
+{
+  "name": "api-transportadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaabalbi/API_Transportadora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/anaabalbi/API_Transportadora/issues"
+  },
+  "homepage": "https://github.com/anaabalbi/API_Transportadora#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

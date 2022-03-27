@@ -54,53 +54,53 @@ Retorna todos os endereçoes existentes na base de dados.
 Exemplo da resposta esperada:
 
 ```
-	{
-		"address": {
-			"address": [
-				{
-					"ID": 1,
-					"SENDER_ADDRESS": "East Avenue d 222 ",
-					"SENDER_ZIP_CODE": "76522",
-					"SENDER_CITY": "Copperas Cove",
-					"SENDER_STATE": "Texas",
-					"SENDER_COUNTRY": "USA",
-					"ADDRESSEE_ADDRESS": "Catawba Ave. 20832",
-					"ADDRESSEE_ZIP_CODE": "28031",
-					"ADDRESSEE_CITY": "Cornelius",
-					"ADDRESSEE_STATE": "North Carolina",
-					"ADDRESSEE_COUNTRY": "USA"
-				},
-				{
-					"ID": 2,
-					"SENDER_ADDRESS": "Rua São Geraldo 40",
-					"SENDER_ZIP_CODE": "39573-972",
-					"SENDER_CITY": "Padre Carvalho",
-					"SENDER_STATE": "Minas Gerais",
-					"SENDER_COUNTRY": "BR",
-					"ADDRESSEE_ADDRESS": "Rua Gildo Sevalli 315",
-					"ADDRESSEE_ZIP_CODE": "08940-970",
-					"ADDRESSEE_CITY": "Biritiba-Mirim",
-					"ADDRESSEE_STATE": "São Paulo",
-					"ADDRESSEE_COUNTRY": "BR"
-				},
-				{
-					"ID": 3,
-					"SENDER_ADDRESS": "Avenidade Dioguinho 2525",
-					"SENDER_ZIP_CODE": "60182-125",
-					"SENDER_CITY": "Fortaleza",
-					"SENDER_STATE": "Céara",
-					"SENDER_COUNTRY": "BR",
-					"ADDRESSEE_ADDRESS": "Avenida Cidade Jardim 2",
-					"ADDRESSEE_ZIP_CODE": "01453-000",
-					"ADDRESSEE_CITY": "São Paulo",
-					"ADDRESSEE_STATE": "São Paulo",
-					"ADDRESSEE_COUNTRY": "BR"
-				},
-			],
-			"erro": false
-		},
+{
+	"address": {
+		"address": [
+			{
+				"ID": 1,
+				"SENDER_ADDRESS": "East Avenue d 222 ",
+				"SENDER_ZIP_CODE": "76522",
+				"SENDER_CITY": "Copperas Cove",
+				"SENDER_STATE": "Texas",
+				"SENDER_COUNTRY": "USA",
+				"ADDRESSEE_ADDRESS": "Catawba Ave. 20832",
+				"ADDRESSEE_ZIP_CODE": "28031",
+				"ADDRESSEE_CITY": "Cornelius",
+				"ADDRESSEE_STATE": "North Carolina",
+				"ADDRESSEE_COUNTRY": "USA"
+			},
+			{
+				"ID": 2,
+				"SENDER_ADDRESS": "Rua São Geraldo 40",
+				"SENDER_ZIP_CODE": "39573-972",
+				"SENDER_CITY": "Padre Carvalho",
+				"SENDER_STATE": "Minas Gerais",
+				"SENDER_COUNTRY": "BR",
+				"ADDRESSEE_ADDRESS": "Rua Gildo Sevalli 315",
+				"ADDRESSEE_ZIP_CODE": "08940-970",
+				"ADDRESSEE_CITY": "Biritiba-Mirim",
+				"ADDRESSEE_STATE": "São Paulo",
+				"ADDRESSEE_COUNTRY": "BR"
+			},
+			{
+				"ID": 3,
+				"SENDER_ADDRESS": "Avenidade Dioguinho 2525",
+				"SENDER_ZIP_CODE": "60182-125",
+				"SENDER_CITY": "Fortaleza",
+				"SENDER_STATE": "Céara",
+				"SENDER_COUNTRY": "BR",
+				"ADDRESSEE_ADDRESS": "Avenida Cidade Jardim 2",
+				"ADDRESSEE_ZIP_CODE": "01453-000",
+				"ADDRESSEE_CITY": "São Paulo",
+				"ADDRESSEE_STATE": "São Paulo",
+				"ADDRESSEE_COUNTRY": "BR"
+			}
+		],
 		"erro": false
-	}
+	},
+	"erro": false
+}
 
 ```
 
@@ -110,6 +110,7 @@ Retorna o endereço pertecente ao id utilizado na busca. Para isso o paramêtro 
 Exemplo da resposta esperada buscando pelo id 3:
 
 ```
+{
 	"address": {
 		"address": [
 			{

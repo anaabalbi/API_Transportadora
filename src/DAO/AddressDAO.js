@@ -12,7 +12,7 @@ class AddressDAO {
           });
         } else {
           resolve({
-            usuario: rows,
+            address: rows,
             erro: false,
           });
         }
@@ -29,7 +29,7 @@ class AddressDAO {
           });
         } else {
           resolve({
-            usuario: rows,
+            address: rows,
             erro: false,
           });
         }

@@ -23,7 +23,7 @@
  
  - Clone o repositório:
 ```
-git clone https://github.com//API-Rest-Transportadora.git
+git clone https://github.com/anaabalbi/API-Transportadora.git
 ```
 - Acesse a pasta:
 ```
@@ -47,7 +47,7 @@ npm run start
 
 ## 📦 Rotas HTTP
 
-### <b> GET -> http://localhost:3000/address/</b>
+### <b> GET -> //localhost:3000/address/</b>
 
 Retorna todos os endereçoes existentes na base de dados.
 Exemplo da resposta esperada:

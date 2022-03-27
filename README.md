@@ -23,7 +23,7 @@
  
  - Clone o repositório:
 ```
-git clone https://github.com/anaabalbi/API-Transportadora.git
+git clone https://github.com/anaabalbi/API_Transportadora.git
 ```
 - Acesse a pasta:
 ```

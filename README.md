@@ -2,7 +2,8 @@
 
  <p align="justify">Projeto de final de módulo - Resilia Educação. Tendo como objetivo a criação de uma API Rest.
 
-        Desenvolvido por Ana Amélia Balbi - Estudande de Desenvolvimento Web FullStack
+        	Desenvolvido por Ana Amélia Balbi
+    	Estudande de Desenvolvimento Web FullStack
 
 ---
 

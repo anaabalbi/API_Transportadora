@@ -2,7 +2,7 @@
   "name": "api-transportadora",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anaabalbi/API_Transportadora#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sqlite3": "^5.0.2"
   }
 }

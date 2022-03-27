@@ -47,7 +47,7 @@ npm run start
 
 ## 📦 Rotas HTTP
 
-### <b> GET -> //localhost:3000/address/</b>
+### <b> GET -> localhost:3000/address/</b>
 
 Retorna todos os endereçoes existentes na base de dados.
 Exemplo da resposta esperada:
@@ -103,7 +103,7 @@ Exemplo da resposta esperada:
 
 ```
 
-### <b> GET -> http://localhost:3000/address/id/:id </b>
+### <b> GET -> localhost:3000/address/id/:id </b>
 
 Retorna o endereço pertecente ao id utilizado na busca. Para isso o paramêtro id da roda deve ser subustituído pelo id desejado.
 Exemplo da resposta esperada buscando pelo id 3:
@@ -132,7 +132,7 @@ Exemplo da resposta esperada buscando pelo id 3:
 }
 ```
 
-### <b> POST -> http://localhost:3000/address/ </b>
+### <b> POST -> localhost:3000/address/ </b>
 
 Insere uum novo endereço no banco de dados
 Para isso é necessário passar um body no formato abaixo:
@@ -215,7 +215,7 @@ E retornará a resposta:
 }
 ```
 
-### <b> DELETE -> http://localhost:3000/address/id/:id</b>
+### <b> DELETE -> localhost:3000/address/id/:id</b>
 
 Deleta um endereço da base de dados. Para isso você deve substituir o paramêtro id pelo id que deseja deletar, por exemplo o id 4.
 A resposta esperada é:

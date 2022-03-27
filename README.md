@@ -14,7 +14,6 @@
 - <a href="https://expressjs.com/pt-br/">Express</a> - v. 4.17.3
 - <a href="https://www.npmjs.com/package/sqlite3">SQLite</a> - v. 5.0.0
 - <a href="https://nodemon.io/">Nodemon</a> - v. 2.0.15
-- <a href="https://www.npmjs.com/package/supertest"> Supertest</a> - v. 6.2.2
 
 ---
 
@@ -238,16 +237,6 @@ A resposta esperada é:
 	},
 	"erro": false
 }
-```
-
----
-
-## 📬 Testes
-
-<p align="justify">Este projeto conta com um arquivo de testes para conferir o funcionamento das rotas da API. Para utilizá-lo, é necessário que o banco de dados esteja populado. Os testes podem ser rodados com o comando</p>
-
-```
-npm run test
 ```
 
 ---

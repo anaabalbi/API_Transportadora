@@ -20,6 +20,15 @@ class Address {
       throw error;
     }
   };
+
+  getAddressCode = async (code) => {
+    try {
+      return await this.dao.getAddressCode(code);
+    } catch (error) {
+      throw error;
+    }
+  };
+
   newAddress = async (address) => {
     try {
       const newAddressSchema = new AddressSchema(
@@ -32,7 +41,9 @@ class Address {
         address.addressee_zip_code,
         address.addressee_city,
         address.addressee_state,
-        address.addressee_country
+        address.addressee_country,
+        address.client_id,
+        address.status
       );
       return await this.dao.newAddress(newAddressSchema);
     } catch (error) {

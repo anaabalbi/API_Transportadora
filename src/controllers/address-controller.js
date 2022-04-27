@@ -35,6 +35,22 @@ const addressController = (app, bd) => {
     }
   });
 
+  app.get('/address/codetracking/:code', async (req, res) => {
+    const code = req.params.code;
+    try {
+      const resposta = await addressModel.getAddressCode(code);
+      res.status(200).json({
+        address: resposta,
+        erro: false,
+      });
+    } catch (error) {
+      res.status(400).json({
+        message: error.message,
+        erro: true,
+      });
+    }
+  });
+
   app.post('/address', async (req, res) => {
     const body = req.body;
     try {

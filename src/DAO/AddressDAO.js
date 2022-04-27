@@ -37,10 +37,32 @@ class AddressDAO {
     });
   };
 
+  getAddressCode = (code) => {
+    return new Promise((resolve, reject) => {
+      this.db.all(
+        'SELECT * FROM ADDRESS WHERE CODE_TRACKING = ?',
+        code,
+        (error, rows) => {
+          if (error) {
+            reject({
+              mensagem: error.message,
+              erro: true,
+            });
+          } else {
+            resolve({
+              address: rows,
+              erro: false,
+            });
+          }
+        }
+      );
+    });
+  };
+
   newAddress = (address) => {
     return new Promise((resolve, reject) => {
       this.db.run(
-        'INSERT INTO ADDRESS(SENDER_ADDRESS, SENDER_ZIP_CODE, SENDER_CITY, SENDER_STATE, SENDER_COUNTRY, ADDRESSEE_ADDRESS,ADDRESSEE_ZIP_CODE, ADDRESSEE_CITY, ADDRESSEE_STATE, ADDRESSEE_COUNTRY) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        'INSERT INTO ADDRESS(SENDER_ADDRESS, SENDER_ZIP_CODE, SENDER_CITY, SENDER_STATE, SENDER_COUNTRY, ADDRESSEE_ADDRESS,ADDRESSEE_ZIP_CODE, ADDRESSEE_CITY, ADDRESSEE_STATE, ADDRESSEE_COUNTRY, CLIENT_ID, STATUS, CODE_TRACKING, DATE_ORDERED) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
         address.sender_address,
         address.sender_zip_code,
         address.sender_city,
@@ -51,6 +73,11 @@ class AddressDAO {
         address.addressee_city,
         address.addressee_state,
         address.addressee_country,
+        address.client_id,
+        address.status,
+        address.code_tracking,
+        address.date_ordered,
+
         (error) => {
           if (error) {
             reject(error);
@@ -76,6 +103,10 @@ class AddressDAO {
         address.addressee_city,
         address.addressee_state,
         address.addressee_country,
+        address.client_id,
+        address.status,
+        address.code_tracking,
+        address.date_ordered,
         id,
         (error) => {
           if (error) {

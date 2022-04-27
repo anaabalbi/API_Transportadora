@@ -60,9 +60,10 @@ class AddressDAO {
   };
 
   newAddress = (address) => {
+    console.log(address);
     return new Promise((resolve, reject) => {
       this.db.run(
-        'INSERT INTO ADDRESS(SENDER_ADDRESS, SENDER_ZIP_CODE, SENDER_CITY, SENDER_STATE, SENDER_COUNTRY, ADDRESSEE_ADDRESS,ADDRESSEE_ZIP_CODE, ADDRESSEE_CITY, ADDRESSEE_STATE, ADDRESSEE_COUNTRY, CLIENT_ID, STATUS, CODE_TRACKING, DATE_ORDERED) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        'INSERT INTO ADDRESS(SENDER_ADDRESS, SENDER_ZIP_CODE, SENDER_CITY, SENDER_STATE, SENDER_COUNTRY, ADDRESSEE_ADDRESS,ADDRESSEE_ZIP_CODE, ADDRESSEE_CITY, ADDRESSEE_STATE, ADDRESSEE_COUNTRY, CLIENT_ID, STATUS, CODE_TRACKING, DATE_ORDERED) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
         address.sender_address,
         address.sender_zip_code,
         address.sender_city,

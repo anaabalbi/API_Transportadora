@@ -10,9 +10,10 @@ class Address {
     try {
       return await this.dao.getAddress();
     } catch (error) {
-      throw error;
+      throw error(error.message);
     }
   };
+
   getAddressId = async (id) => {
     try {
       return await this.dao.getAddressId(id);
@@ -85,7 +86,7 @@ class Address {
 
   _searchID = async (id) => {
     const resposta = await this.dao.getAddressId(id);
-    if (resposta.length === 0) {
+    if (resposta.length < 0) {
       throw new Error('O endereço não exite');
     }
   };

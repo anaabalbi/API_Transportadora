@@ -8,12 +8,12 @@ class AddressDAO {
         if (error) {
           reject({
             mensagem: error.message,
-            erro: true,
+            error: true,
           });
         } else {
           resolve({
             address: rows,
-            erro: false,
+            error: false,
           });
         }
       });
@@ -25,12 +25,12 @@ class AddressDAO {
         if (error) {
           reject({
             mensagem: error.message,
-            erro: true,
+            error: true,
           });
         } else {
           resolve({
             address: rows,
-            erro: false,
+            error: false,
           });
         }
       });
@@ -46,12 +46,12 @@ class AddressDAO {
           if (error) {
             reject({
               mensagem: error.message,
-              erro: true,
+              error: true,
             });
           } else {
             resolve({
               address: rows,
-              erro: false,
+              error: false,
             });
           }
         }

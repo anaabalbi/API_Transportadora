@@ -83,7 +83,7 @@ class AddressDAO {
           if (error) {
             reject(error);
           } else {
-            resolve('Endereço inserido com sucesso');
+            resolve('Endereço inserido com sucesso!');
           }
         }
       );

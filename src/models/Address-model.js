@@ -25,6 +25,7 @@ class Address {
 
   getAddressCode = async (code) => {
     try {
+      await this._searchCODE(code);
       return await this.dao.getAddressCode(code);
     } catch (error) {
       throw error;
@@ -92,6 +93,16 @@ class Address {
       return resposta;
     } else {
       throw new Error('O endereço não exite');
+    }
+  };
+
+  _searchCODE = async (code) => {
+    const resposta = await this.dao.getAddressCode(code);
+    console.log(resposta.length);
+    if (resposta.length != 0) {
+      return resposta;
+    } else {
+      throw new Error('O código não foi encontrado');
     }
   };
 }

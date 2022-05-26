@@ -16,6 +16,7 @@ class Address {
 
   getAddressId = async (id) => {
     try {
+      await this._searchID(id);
       return await this.dao.getAddressId(id);
     } catch (error) {
       throw error;
@@ -86,6 +87,7 @@ class Address {
 
   _searchID = async (id) => {
     const resposta = await this.dao.getAddressId(id);
+    console.log(resposta.length);
     if (resposta.length != 0) {
       return resposta;
     } else {

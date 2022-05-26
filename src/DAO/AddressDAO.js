@@ -6,15 +6,9 @@ class AddressDAO {
     return new Promise((resolve, reject) => {
       this.db.all('SELECT * FROM ADDRESS', (error, rows) => {
         if (error) {
-          reject({
-            mensagem: error.message,
-            error: true,
-          });
+          reject(error);
         } else {
-          resolve({
-            address: rows,
-            error: false,
-          });
+          resolve(rows);
         }
       });
     });
@@ -23,15 +17,9 @@ class AddressDAO {
     return new Promise((resolve, reject) => {
       this.db.all('SELECT * FROM ADDRESS WHERE ID = ?', id, (error, rows) => {
         if (error) {
-          reject({
-            mensagem: error.message,
-            error: true,
-          });
+          reject(error);
         } else {
-          resolve({
-            address: rows,
-            error: false,
-          });
+          resolve(rows);
         }
       });
     });
@@ -44,15 +32,9 @@ class AddressDAO {
         code,
         (error, rows) => {
           if (error) {
-            reject({
-              mensagem: error.message,
-              error: true,
-            });
+            reject(error);
           } else {
-            resolve({
-              address: rows,
-              error: false,
-            });
+            resolve(rows);
           }
         }
       );
